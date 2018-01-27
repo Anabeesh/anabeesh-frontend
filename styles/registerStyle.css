@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=El+Messiri:400,600');
+
+*{
+    margin: 0;padding: 0;
+}
+
+::selection {
+    color:#eee;
+    background: #6f6f6f;
+}
+
+/* Start Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 7px;
+    opacity: 0.9;
+    
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(185, 12, 12, 0);
+    background-color:#fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1F1F1F;
+    height: 50px;
+}
+
+/* End Scroll Bar*/
+
+body{
+    font-family: 'El Messiri', sans-serif;
+    background-color: #fdfdfd;
+    background: url(../images/register-background.jpg) top center #ffffff;
+}
+
+/************************/
+
+.row{
+    height: 100%;
+}
+
+.formsContainer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 2px;
+    background-color: #fff;
+    position: relative;
+    padding: 20px 50px;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.31);
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+h1 ~ hr{
+    width: 100px;
+    border: 1px solid #9b9b9b;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+form{
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.signUp, .signIn{
+    padding: 30px 50px;
+    padding-top: 0;
+}
+
+.signUp{
+    border-right: 2px solid #9b9b9b;
+    padding-left: 0;
+}
+.signIn{
+    padding-right: 0;
+}
+
+label{
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 25px;
+    font-weight: 900;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 7px 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    border-style: solid;
+    border-width: .5px;
+    border-radius: 2px;
+    border-color: #a7a7a7;
+}
+
+input[type="text"]{
+    width: 49%;
+    float: right;
+    background: url(../images/person-iconl.png) no-repeat scroll 5px 5px #fff; 
+}
+input.lName{
+    float: left;
+    margin-right: 1%;
+}
+
+input[type="submit"]{
+    width: 35%;
+    /*background: linear-gradient( #4830a4, #74c0d3);*/
+    background-color: #333;
+    border: 0;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+form a{
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    display: block;
+    width: 35%;
+    text-align: left;
+    float: left;
+    padding: 10px 0;
+}
+
+input[type="email"]{
+    background: url(../images/mail-icon.png) no-repeat scroll 5px 5px #fff; 
+}
+
+input[type="password"]{
+    background: url(../images/pass-icon.png) no-repeat scroll 5px 5px #fff;
+    
+}
+
+.socialSign{
+    border-top: 2px solid #9b9b9b;
+    padding-top: 40px;
+}
+
+.socialSign:after{
+    content: url('../images/ORT.jpg');
+    position: absolute;
+    top: -40px; left: 50%;
+    transform: translate(-50%,0);
+    
+}
+
+.socialSign a{
+    padding: 10px 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    width: 40%;
+    border-radius: 100px;
+    display: block;
+    text-align: right;
+    margin: 0 auto;
+    font-size: 15px;
+   
+}
+
+.socialSign a:first-of-type{
+    margin-bottom: 15px;
+}
+
+.socialSign a i{
+    
+    float: left;
+    margin-top: 3px;
+}
+
+/************ Media Queries **************/
+
+@media only screen and (max-width : 991px) {
+    .formsContainer{
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0.93);
+    }
+    .socialSign:after{
+        display: none;
+    }
+    form:last-of-type{
+        margin-bottom: 0;
+    }
+    .signUp{
+        border-right: 0;
+        border-bottom: 2px solid #9b9b9b;
+        padding: 0;
+    }
+    .signIn{
+        padding-left: 0;
+    }
+    .socialSign{
+        padding: 35px 0 0 0;
+    }
+    .socialSign a{
+        display: block;
+        width: 49%;
+        margin: 0;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .socialSign a:first-of-type{
+        float: left;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .socialSign a{
+        width: 100%;
+        float: right;
+    }
+    form a{
+        font-size: 12px;
+    }
+}
