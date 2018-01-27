@@ -70,13 +70,12 @@ h1 ~ hr{
 form{
     margin-top: 10px;
     text-align: center;
-    display: block;
     margin-top: 30px;
     margin-bottom: 0px;
 }
 
 .signUp, .signIn{
-    padding: 30px 50px;
+    padding: 30px 50px 20px 50px;
     padding-top: 0;
 }
 
@@ -124,7 +123,7 @@ input[type="submit"]{
     border: 0;
     color: #fff;
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 10px;
 }
 
 form a{
@@ -170,7 +169,7 @@ input[type="password"]{
     display: block;
     text-align: right;
     margin: 0 auto;
-    font-size: 15px;
+    font-size: 13px;
    
 }
 
@@ -179,7 +178,6 @@ input[type="password"]{
 }
 
 .socialSign a i{
-    
     float: left;
     margin-top: 3px;
 }
@@ -204,6 +202,7 @@ input[type="password"]{
     }
     .signIn{
         padding-left: 0;
+        padding-bottom: 0;
     }
     .socialSign{
         padding: 35px 0 0 0;
